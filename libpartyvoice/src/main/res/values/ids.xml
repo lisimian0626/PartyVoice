@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iparty_study" type="id" />
+    <item name="iparty_lesson" type="id" />
+    <item name="iparty_history" type="id" />
+    <item name="iparty_story" type="id" />
+    <item name="iparty_music" type="id" />
+    <item name="iparty_media" type="id" />
+    <item name="iparty_collect" type="id" />
+</resources>

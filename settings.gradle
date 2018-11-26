@@ -1,1 +1,1 @@
-include ':app', ':libpartyvoice'
+include ':app', ':libpartyvoice', ':libCGEVideo'

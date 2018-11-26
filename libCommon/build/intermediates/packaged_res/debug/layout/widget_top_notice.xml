@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/holo_red_dark">
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@android:drawable/stat_notify_error"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        tools:text="网络请求失败"/>
+</RelativeLayout>

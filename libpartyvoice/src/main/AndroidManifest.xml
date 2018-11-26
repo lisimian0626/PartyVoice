@@ -1,2 +1,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.beidousat.libpartyvoice" />
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.beidousat.libpartyvoice">
+
+    <application
+        android:name=".IPartyVoiceApp"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ISinging.Common"
+        tools:replace="android:theme"
+        >
+        <activity android:name="com.beidousat.libpartyvoice.ISHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BlueToothActivity"></activity>
+        <receiver android:name="pl.sugl.common.event.NetWorkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

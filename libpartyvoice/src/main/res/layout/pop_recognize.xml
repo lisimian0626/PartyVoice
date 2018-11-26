@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/pop_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/ContentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="您请说......" />
+
+        <TextView
+            android:id="@+id/tv_top_search"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_round_crile"
+            android:drawableRight="@drawable/audio_btn_search"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recongnize_tips"
+        android:layout_below="@id/pop_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_margin="15dp"
+            style="@style/ContentSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_tips1"
+            android:lineSpacingExtra="8dp"
+            />
+    </LinearLayout>
+
+      <View
+          android:id="@+id/view"
+          android:layout_below="@id/recongnize_tips"
+          android:layout_width="match_parent"
+          android:layout_height="10dp"
+          android:background="@color/transparent"
+          />
+
+    <LinearLayout
+        android:id="@+id/pop_toplayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/audio_btn_vedio"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>

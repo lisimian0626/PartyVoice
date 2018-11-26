@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
     buildTypes {
         release {
@@ -16,13 +17,44 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    signingConfigs {
+        debug {
+            storePassword 'Beidousat_Karaoke'                            //签名证书密码
+            keyAlias "beidousat"                                         //别名
+            keyPassword 'Beidousat_Karaoke'                              //别名密码
+            storeFile file("../beidousat_keys.jks")
+        }
+
+        release {
+            storePassword 'Beidousat_Karaoke'                            //签名证书密码
+            keyAlias "beidousat"                                         //别名
+            keyPassword 'Beidousat_Karaoke'                              //别名密码
+            storeFile file("../beidousat_keys.jks")
+        }
+    }
 }
 
+
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':libpartyvoice')
+//    implementation(name: 'voicetranslib-release', ext: 'aar')//蓝牙spp连接、设备校验、语音传输
+//    implementation(name: 'jl_speex_V1.5_20180621', ext: 'aar')//蓝牙语音数据解码库
+//    api(name: 'voicelib-release', ext: 'aar')//百度语音识别。把pcm音频数据识别成文字
+//    implementation(name: 'libBaseAdapter-debug', ext: 'aar')
+//    implementation(name: 'libCGEVideo-debug', ext: 'aar')
+//    implementation(name: 'libpartyvoice-debug', ext: 'aar')
+}
+
+repositories {
+    flatDir {
+        dirs '../libpartyvoice/libs','libs'
+    }
+    google()
+    mavenCentral()
 }

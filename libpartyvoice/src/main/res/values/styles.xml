@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性边距为0dp-->
+        <item name="contentInsetLeft">0dp</item><!-- 设置该属性边距为0dp-->
+    </style>
+    <style name="Theme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarSize">@dimen/actionbar_size</item>
+    </style>
+    <style name="Theme.ISinging.Common" parent="Theme.Base">
+        <item name="toolbarStyle">@style/CustomToolbar</item>
+    </style>
+
+    <style name="Theme.ISinging.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bar_grey</item>
+        <item name="colorPrimaryDark">@color/bar_grey</item>
+        <item name="colorAccent">@color/bar_grey</item>
+    </style>
+
+    <style name="BottomDialog" parent="@style/AppTheme">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/pop_anim_style</item>
+    </style>
+
+    <style name="AppTheme.TranslucentStatus" parent="Theme.ISinging.Common">
+        <item name="colorPrimary">@android:color/transparent</item>    <!-- 状态栏 -->
+        <item name="colorPrimaryDark">@android:color/transparent</item> <!-- toolbar -->
+    </style>
+
+    <style name="Theme.ISinging.FullScreen" parent="Theme.ISinging.Common">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.ISinging.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ContentTitle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_1</item>
+        <item name="android:textSize">@dimen/Z2</item>
+    </style>
+    <style name="ContentTitle2">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_1</item>
+        <item name="android:textSize">@dimen/Z4</item>
+    </style>
+    <style name="SearchTitle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/Z2</item>
+    </style>
+
+    <style name="ContentSubTitle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_2</item>
+        <item name="android:textSize">@dimen/Z4</item>
+    </style>
+
+    <style name="UserFillText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/CZ4</item>
+        <item name="android:textSize">@dimen/Z2</item>
+    </style>
+
+    <style name="CategoryTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/Z3</item>
+        <item name="android:textColor">@color/CZ1</item>
+    </style>
+
+    <style name="CategoryItemTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/Z3</item>
+        <item name="android:textColor">@color/CZ1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CategoryLabel" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/Z4</item>
+        <item name="android:textColor">@color/CZ1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Singer">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/CZ3</item>
+        <item name="android:textSize">@dimen/Z3</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/Z1</item>
+        <item name="android:textColor">@color/CZ7</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/round_progress_horizontal</item>
+        <item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">2dip</item>
+        <item name="android:mirrorForRtl">true</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+    </style>
+
+
+    <style name="CollapsedAppBar" parent="ToolbarTitle">
+    </style>
+    <style name="ExpandedAppBar" parent="ToolbarTitle">
+    </style>
+    <style name="MyActivityDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="pop_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pop_hide</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+</resources>

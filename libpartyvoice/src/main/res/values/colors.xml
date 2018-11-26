@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#5CB85C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transprent">#00000000</color>
+    <color name="white_20p">#33FFFFFF</color>
+    <color name="white_60p">#99FFFFFF</color>
+    <color name="white_80p">#CCFFFFFF</color>
+    <color name="white_90p">#DDFFFFFF</color>
+    <color name="black_60p">#99000000</color>
+    <color name="black_80p">#CC000000</color>
+    <color name="c1_40p">#66FFAE00</color>
+    <color name="c3_40p">#66000000</color>
+    <color name="c3_60p">#99000000</color>
+    <color name="color_333_100p">#333</color>
+    <color name="color_333_0p">#0333</color>
+    <color name="c2_20p">#2FFF</color>
+
+    <color name="C1">#FFAE00</color>
+    <color name="C2">#FFF</color>
+    <color name="C3">#000</color>
+    <color name="B1">#F2F2F2</color>
+    <color name="B2">#FFF</color>
+    <color name="B3">#FAFAFA</color>
+    <color name="CZ1">#333</color>
+    <color name="CZ2">#666</color>
+    <color name="CZ3">#999</color>
+    <color name="CZ4">#CCC</color>
+    <color name="CZ5">#FFAE00</color>
+    <color name="CZ6">#FFCF68</color>
+    <color name="CZ7">#FFF</color>
+    <color name="X1">#CCC</color>
+    <color name="X2">#E5E5E5</color>
+    <color name="X3">#F2F2F2</color>
+
+    <color name="bar_grey">#393a3e</color>
+    <color name="bar_grey_90">#dd393a3e</color>
+    <color name="blue">#7D7DFF</color>
+    <color name="color_4d">#4d4d4d</color>
+    <color name="color_53">#53575e</color>
+    <color name="color_69">#999999</color>
+    <color name="color_f0">#F0F0F0</color>
+    <color name="color_f2">#F2F2F2</color>
+    <color name="color_fa">#FAFAFA</color>
+    <color name="color_orange">#E0FF6100</color>
+    <color name="image_overlay_false">#20000000</color>
+    <color name="image_overlay_true">#80000000</color>
+    <color name="line_color">#EEEEEE</color>
+    <color name="tab_color_false">#9b9b9b</color>
+    <color name="tab_color_true">#FA632D</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_db">#E0DBDBDB</color>
+    <color name="transparent_white">#F0FFFFFF</color>
+
+    //partyvoice
+    <color name="red_title">#CC001B</color>
+    <color name="gray">#CFCFCF</color>
+    <color name="text_1">#000000</color>
+    <color name="text_2">#666666</color>
+    <color name="text_3">#999999</color>
+    <color name="line_1">#E5E5E5</color>
+    <color name="line_2">#D9D9D9</color>
+    <color name="line_3">#F2F2F2</color>
+</resources>

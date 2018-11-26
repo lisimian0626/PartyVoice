@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_empty_layout_manager" type="id" />
+    <item name="tag_empty_add_view" type="id"/>
+    <item name="tag_empty_add_type" type="id"/>
+    <item name="tag_empty_retry" type="id"/>
+    <item name="tag_empty_setting" type="id"/>
+    <item name="tag_empty_content" type="id"/>
+
+    <item name="tag_current_offset" type="id" />
+    <item name="tag_observable_view" type="id" />
+    <item name="tag_observable_view_last_scroll_x" type="id" />
+    <item name="tag_observable_view_last_scroll_y" type="id" />
+    <item name="tag_view_target" type="id" />
+</resources>

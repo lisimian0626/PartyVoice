@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="boolean" name="civ_border_overlay"/><attr format="color" name="civ_fill_color"/><attr format="color" name="civ_circle_background_color"/></declare-styleable>
+    <declare-styleable name="ClearEditText"><attr format="integer" name="minLetterLen"/><attr format="integer" name="maxLetterLen"/><attr format="dimension" name="errorTextSize"/></declare-styleable>
+    <declare-styleable name="SmoothAppBarLayout"><attr format="reference" name="sabl_view_pager_id"/><attr format="reference" name="sabl_target_id"/></declare-styleable>
+    <declare-styleable name="SmoothCollapsingToolbarLayout"><attr format="dimension|reference" name="sctl_collapsed_offsetX"/><attr format="dimension|reference" name="sctl_collapsed_offsetY"/><attr format="dimension|reference" name="sctl_collapsed_avatarSize"/><attr format="dimension|reference" name="sctl_collapsed_titleTextSize"/><attr format="dimension|reference" name="sctl_collapsed_subtitleTextSize"/><attr format="dimension|reference" name="sctl_expanded_offsetX"/><attr format="dimension|reference" name="sctl_expanded_offsetY"/><attr format="dimension|reference" name="sctl_expanded_avatarSize"/><attr format="dimension|reference" name="sctl_expanded_titleTextSize"/><attr format="dimension|reference" name="sctl_expanded_subtitleTextSize"/><attr format="reference" name="sctl_avatar_id"/><attr format="reference" name="sctl_title_id"/><attr format="reference" name="sctl_subtitle_id"/></declare-styleable>
+    <declare-styleable name="SmsCodeView"><attr format="color" name="normal_text_color"/><attr format="color" name="sent_text_color"/><attr format="dimension" name="normal_text_size"/><attr format="dimension" name="sent_text_size"/><attr format="string" name="normal_btn_text"/><attr format="string" name="sent_btn_text"/></declare-styleable>
+    <dimen name="actionbar_size">44dp</dimen>
+    <item name="tag_current_offset" type="id"/>
+    <item name="tag_empty_add_type" type="id"/>
+    <item name="tag_empty_add_view" type="id"/>
+    <item name="tag_empty_content" type="id"/>
+    <item name="tag_empty_layout_manager" type="id"/>
+    <item name="tag_empty_retry" type="id"/>
+    <item name="tag_empty_setting" type="id"/>
+    <item name="tag_observable_view" type="id"/>
+    <item name="tag_observable_view_last_scroll_x" type="id"/>
+    <item name="tag_observable_view_last_scroll_y" type="id"/>
+    <item name="tag_view_target" type="id"/>
+    <string name="app_name">libCommon</string>
+    <string name="loading_waiting">请稍后...</string>
+    <string name="smscode_delay">重新获取</string>
+    <string name="smscode_get">点击获取验证码</string>
+    <style name="LoadingDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">#ffE91E63</item>
+    </style>
+    <style name="Theme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarSize">@dimen/actionbar_size</item>
+    </style>
+    <style name="Theme.Translucent.NoTitleBar" parent="Theme.Base">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

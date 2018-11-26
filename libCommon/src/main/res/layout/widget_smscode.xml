@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <pl.sugl.common.widget.ClearEditText
+        android:id="@+id/et_verify_code"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="#FFF"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:maxLines="1"
+        app:maxLetterLen="6"
+        android:maxLength="6"
+        android:textColor="#333"
+        android:textColorHint="#CCC"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_send_smscode"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/selector_smscode"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="点击获取验证码"
+        android:textColor="#FFF"
+        android:textSize="12sp"/>
+</LinearLayout>

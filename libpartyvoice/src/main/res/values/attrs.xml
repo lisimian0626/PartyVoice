@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BezierHolderView">
+        <attr name="bezierCtrlOffset" format="dimension"/>
+        <attr name="frontBgColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CategoryIndexBar">
+        <attr name="childLRPadding" format="dimension"/>
+        <attr name="childTBPadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ControlPanel">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="progressBackgroundColor" format="color"/>
+        <attr name="progressForgroundColor" format="color"/>
+        <attr name="thumbColor" format="color"/>
+        <attr name="ctrlOvalWidth" format="dimension"/>
+        <attr name="ctrlOvalHeight" format="dimension"/>
+        <attr name="progressSize" format="dimension"/>
+        <attr name="thumbBigSize" format="dimension"/>
+        <attr name="thumbSmallSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SingingFunctionPanel">
+        <attr name="ovalWidth" format="dimension"/>
+        <attr name="ovalHeight" format="dimension"/>
+        <attr name="ovalBackgroundColor" format="color"/>
+        <attr name="bgAlpha" format="integer" />
+        <attr name="ovalLayerBackgroundColor" format="color"/>
+        <attr name="layerBgAlpha" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ovalPanel">
+        <attr name="ovalPanelWidth" format="dimension"/>
+        <attr name="ovalPanelHeight" format="dimension"/>
+        <attr name="ovalPanelColor" format="color"/>
+        <attr name="bgPanelAlpha" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BeautyLevelView">
+        <attr name="maxLevel" format="integer"/>
+        <attr name="indexColor" format="color"/>
+        <attr name="indexImage" format="reference" />
+        <attr name="indexTextSize" format="dimension"/>
+        <attr name="beautyAlpha" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="UserInfoView">
+        <attr name="layout_res" format="reference"/>
+        <attr name="avatar_size" format="dimension"/>
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="UserInfoViewV2">
+        <attr name="v2_layout_res" format="reference"/>
+        <attr name="v2_avatar_size" format="dimension"/>
+        <attr name="v2_name_text_size" format="dimension" />
+        <attr name="v2_sub_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FilterMargin">
+        <attr name="filter_margin" format="dimension"/>
+    </declare-styleable>
+
+</resources>

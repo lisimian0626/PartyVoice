@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">libPartyVoice</string>
+
+    <string name="app_name">党声</string>
+    <string name="app_toolbar_name">党声</string>
+    <string name="nav_btn_mic">智能Mic</string>
+    <string name="iparty_study_title">学习路上</string>
+    <string name="iparty_study_description">习近平总书记语录</string>
+    <string name="iparty_lesson_title">重温党课</string>
+    <string name="iparty_lesson_description">中国共产党章程</string>
+
+    <string name="iparty_history_title">党史大事件</string>
+    <string name="iparty_story_title">名人故事</string>
+    <string name="iparty_music_title">名人金曲</string>
+    <string name="iparty_media_title">版权曲库</string>
+    <string name="iparty_collect_title">我的收藏</string>
+
+    <string name="search_tips1">中国共产党章程\n中国共产党入党宣誓\n党章修订集合\n......</string>
+    <string name="bt_hint">请输入会员激活码</string>
+    <string name="bt_tips">您当前还没激活麦克风会员,请输入随设备附赠的会员码进行激活</string>
+    <string name="bt_devices_band">已配对设备</string>
+    <string name="bt_search">搜索蓝牙设备</string>
+
+    <string name="vip">会员权益</string>
+    <string name="vip_funtion1">1.免费点播所有内容（包括版权收费内容）</string>
+    <string name="vip_funtion2">2.免费开启智能语音助手功能</string>
+
+    <string name="blubtooth_title">智能麦克风</string>
 </resources>

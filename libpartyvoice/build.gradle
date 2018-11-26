@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+//apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion 28
 
@@ -10,7 +10,6 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -25,10 +24,68 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api rootProject.ext.deps.eventbus
+    api rootProject.ext.deps.butterknife
+    annotationProcessor rootProject.ext.deps.butterknifeCompiler
+    api rootProject.ext.deps.constraint
+    api rootProject.ext.deps.supportV4
+    api rootProject.ext.deps.supportV7
+    api rootProject.ext.deps.design
+    api rootProject.ext.deps.viewPagerTransforms
+    //打包成jar不能导入dagger库，因为Application也需要dagger2
+    api rootProject.ext.deps.dagger2
+    api rootProject.ext.deps.dagger2Android
+    api rootProject.ext.deps.dagger2AndroidSup
+    api rootProject.ext.deps.rxandroid
+    api rootProject.ext.deps.rxjava
+    api rootProject.ext.deps.retrofit
+    api rootProject.ext.deps.gson
+    api rootProject.ext.deps.rxjava2Adapter
+    api rootProject.ext.deps.scalarsConvert
+    api rootProject.ext.deps.gsonConvert
+    api rootProject.ext.deps.FlycoDialog
+    api rootProject.ext.deps.kpswitch
+    api rootProject.ext.deps.filedownloader
+    api rootProject.ext.deps.multidex
+    api rootProject.ext.deps.banner
+    api rootProject.ext.deps.glide
+    annotationProcessor rootProject.ext.deps.glideCompiler
+    api rootProject.ext.deps.constraint
+//    api project(':libBaseAdapter')
+//    implementation project(':libJsBridge')
+//    implementation project(':liblyric')
+//    implementation project(':jiaozivideoplayer')
+    implementation project(path: ':libCGEVideo')
+//    implementation project(':libMp3lame')
+    implementation project(':libCGEVideo')
+//    implementation project(':libCommon')
+//    implementation project(':StatusBarlibrary')
+    implementation(name: 'voicetranslib-release', ext: 'aar')//蓝牙spp连接、设备校验、语音传输
+    implementation(name: 'jl_speex_V1.5_20180621', ext: 'aar')//蓝牙语音数据解码库
+    implementation(name: 'voicelib-release', ext: 'aar')//百度语音识别。把pcm音频数据识别成文字
+    implementation(name: 'libBaseAdapter-debug', ext: 'aar')
+//    implementation(name: 'libCGEVideo-debug', ext: 'aar')
+    implementation(name: 'jiaozivideoplayer-debug', ext: 'aar')
+    implementation(name: 'libJsBridge-debug', ext: 'aar')
+    implementation(name: 'liblyric-debug', ext: 'aar')
+    implementation(name: 'libMp3lame-debug', ext: 'aar')
+    implementation(name: 'StatusBarlibrary-debug', ext: 'aar')
+    implementation(name: 'libCommon-debug', ext: 'aar')
+
+    //for developer
+    api 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    api 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    google()
+    mavenCentral()
 }

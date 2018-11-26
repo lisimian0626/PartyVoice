@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="url">
+        <item>http://img.zcool.cn/community/015b4a5a44c67ba801206ed35fd376.png@1280w_1l_2o_100sh.webp</item>
+        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic21363tj30ci08ct96.jpg</item>
+        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic259ohaj30ci08c74r.jpg</item>
+        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic2b16zuj30ci08cwf4.jpg</item>
+        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic2e7vsaj30ci08cglz.jpg</item>
+    </array>
+
+    <!--<string-array name="ISingingTabTitles">-->
+        <!--<item>@string/tab_sing</item>-->
+        <!--<item>@string/tab_ycyh</item>-->
+        <!--<item>@string/tab_ktv</item>-->
+        <!--<item>@string/tab_user</item>-->
+    <!--</string-array>-->
+
+    <!--<integer-array name="ISingingTabDrawables">-->
+        <!--<item>@drawable/selector_tab_singing</item>-->
+        <!--<item>@drawable/selector_tab_show</item>-->
+        <!--<item>@drawable/selector_tab_ktv</item>-->
+        <!--<item>@drawable/selector_tab_user</item>-->
+    <!--</integer-array>-->
+
+    <string-array name="FragmentTitle">
+        <item>猜你喜欢</item>
+        <item>点唱榜</item>
+        <item>飙升榜</item>
+        <item>华语榜</item>
+        <item>粤语榜</item>
+        <item>外语榜</item>
+        <item>新人榜</item>
+        <item>民谣榜</item>
+    </string-array>
+
+    <string-array name="MvTitle">
+        <item>随便看</item>
+        <item>关注</item>
+        <item>大赛</item>
+        <item>人气作品</item>
+        <item>精致MV</item>
+        <item>外语榜</item>
+        <item>新人榜</item>
+        <item>民谣榜</item>
+    </string-array>
+
+    <!--<integer-array name="CategoryIds">-->
+        <!--<item>@id/isinging_category_variety</item>-->
+        <!--<item>@id/isinging_category_chorus</item>-->
+        <!--<item>@id/isinging_category_pop</item>-->
+        <!--<item>@id/isinging_category_children</item>-->
+        <!--<item>@id/isinging_category_military</item>-->
+        <!--<item>@id/isinging_category_dance</item>-->
+        <!--<item>@id/isinging_category_folksong</item>-->
+        <!--<item>@id/isinging_category_drama</item>-->
+        <!--<item>@id/isinging_category_school</item>-->
+    <!--</integer-array>-->
+
+    <!--<integer-array name="CategoryDrawables">-->
+        <!--<item>@drawable/category_variety</item>-->
+        <!--<item>@drawable/category_chorus</item>-->
+        <!--<item>@drawable/category_pop</item>-->
+        <!--<item>@drawable/category_children</item>-->
+        <!--<item>@drawable/category_military</item>-->
+        <!--<item>@drawable/category_dance</item>-->
+        <!--<item>@drawable/category_folksong</item>-->
+        <!--<item>@drawable/category_drama</item>-->
+        <!--<item>@drawable/category_school</item>-->
+    <!--</integer-array>-->
+    <!---->
+    <!--<integer-array name="CategoryTitles">-->
+        <!--<item>@string/category_variety</item>-->
+        <!--<item>@string/category_chorus</item>-->
+        <!--<item>@string/category_pop</item>-->
+        <!--<item>@string/category_children</item>-->
+        <!--<item>@string/category_military</item>-->
+        <!--<item>@string/category_dance</item>-->
+        <!--<item>@string/category_folksong</item>-->
+        <!--<item>@string/category_drama</item>-->
+        <!--<item>@string/category_school</item>-->
+    <!--</integer-array>-->
+
+    <!--<integer-array name="UserCategoryId">-->
+        <!--<item>@id/user_message</item>-->
+        <!--<item>@id/user_comment</item>-->
+        <!--<item>@id/user_like</item>-->
+        <!--<item>@id/user_favorites</item>-->
+        <!--<item>@id/user_video</item>-->
+        <!--<item>@id/user_ktv</item>-->
+    <!--</integer-array>-->
+
+    <!--<integer-array name="UserCategoryDrawable">-->
+        <!--<item>@drawable/user_message</item>-->
+        <!--<item>@drawable/user_comment</item>-->
+        <!--<item>@drawable/user_like</item>-->
+        <!--<item>@drawable/user_favorites</item>-->
+        <!--<item>@drawable/user_video</item>-->
+        <!--<item>@drawable/user_ktv</item>-->
+    <!--</integer-array>-->
+
+    <!--<integer-array name="UserCategoryTitles">-->
+        <!--<item>@string/user_message</item>-->
+        <!--<item>@string/user_comment</item>-->
+        <!--<item>@string/user_like</item>-->
+        <!--<item>@string/user_favorites</item>-->
+        <!--<item>@string/user_video</item>-->
+        <!--<item>@string/user_ktv</item>-->
+    <!--</integer-array>-->
+
+    <!--<integer-array name="FilterIds">-->
+        <!--<item>@id/isinging_filter_none</item>-->
+        <!--<item>@id/isinging_filter_01</item>-->
+        <!--<item>@id/isinging_filter_02</item>-->
+        <!--<item>@id/isinging_filter_03</item>-->
+        <!--<item>@id/isinging_filter_04</item>-->
+        <!--<item>@id/isinging_filter_05</item>-->
+        <!--<item>@id/isinging_filter_06</item>-->
+        <!--<item>@id/isinging_filter_07</item>-->
+        <!--<item>@id/isinging_filter_08</item>-->
+        <!--<item>@id/isinging_filter_09</item>-->
+        <!--<item>@id/isinging_filter_10</item>-->
+    <!--</integer-array>-->
+
+    <!--<integer-array name="FilterTitles">-->
+        <!--<item>@string/filter_none</item>-->
+        <!--<item>@string/filter_01</item>-->
+        <!--<item>@string/filter_02</item>-->
+        <!--<item>@string/filter_03</item>-->
+        <!--<item>@string/filter_04</item>-->
+        <!--<item>@string/filter_05</item>-->
+        <!--<item>@string/filter_06</item>-->
+        <!--<item>@string/filter_07</item>-->
+        <!--<item>@string/filter_08</item>-->
+        <!--<item>@string/filter_09</item>-->
+        <!--<item>@string/filter_10</item>-->
+    <!--</integer-array>-->
+
+    <!--<integer-array name="FilterDrawables">-->
+        <!--<item>@drawable/filter_00</item>-->
+        <!--<item>@drawable/filter_01</item>-->
+        <!--<item>@drawable/filter_02</item>-->
+        <!--<item>@drawable/filter_03</item>-->
+        <!--<item>@drawable/filter_04</item>-->
+        <!--<item>@drawable/filter_05</item>-->
+        <!--<item>@drawable/filter_06</item>-->
+        <!--<item>@drawable/filter_07</item>-->
+        <!--<item>@drawable/filter_08</item>-->
+        <!--<item>@drawable/filter_09</item>-->
+        <!--<item>@drawable/filter_10</item>-->
+    <!--</integer-array>-->
+
+    <string-array name="FilterTags">
+        <item>filter_00</item>
+        <item>filter_01</item>
+        <item>filter_02</item>
+        <item>filter_03</item>
+        <item>filter_04</item>
+        <item>filter_05</item>
+        <item>filter_06</item>
+        <item>filter_07</item>
+        <item>filter_08</item>
+        <item>filter_09</item>
+        <item>filter_10</item>
+    </string-array>
+    
+    <!--<integer-array name="BgLyricArray">-->
+        <!--<item>@drawable/bg_lyric01</item>-->
+        <!--<item>@drawable/bg_lyric02</item>-->
+        <!--<item>@drawable/bg_lyric03</item>-->
+        <!--<item>@drawable/bg_lyric04</item>-->
+    <!--</integer-array>-->
+</resources>

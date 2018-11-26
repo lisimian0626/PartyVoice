@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/list_conntent_avatar"
+        android:layout_width="130dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="@dimen/border_margin"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_conntent_tv_title"
+        style="@style/ContentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxEms="10"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/list_conntent_avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="测试多个字符测试多个字符测试多个字符符测试多个字符符测试多个字符" />
+
+    <TextView
+        android:id="@+id/tv_singer"
+        style="@style/ContentSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/list_conntent_avatar"
+        tools:text="周杰伦" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.sugl.common.widget.VpSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:libISinging="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:libISinging="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            libISinging:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                libISinging:contentScrim="?attr/colorPrimary"
+                libISinging:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/rootView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:background="@color/B1">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:background="@color/C2"
+                        libISinging:indicator_drawable_selected="@color/main_color"
+                        libISinging:indicator_drawable_unselected="@android:color/white"
+                        libISinging:indicator_height="4dp"
+                        libISinging:indicator_margin="4dp"
+                        libISinging:indicator_width="0dp"
+                        libISinging:layout_constraintEnd_toEndOf="parent"
+                        libISinging:layout_constraintStart_toStartOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/category_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        libISinging:layout_constraintTop_toBottomOf="@+id/banner" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/category_recyclerview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        libISinging:layout_constraintTop_toBottomOf="@+id/category_recyclerview" />
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:alpha="1"
+                    android:background="@color/C2"
+                    libISinging:contentInsetLeft="0dp"
+                    libISinging:contentInsetStart="0dp"
+                    libISinging:layout_collapseMode="pin"
+                    libISinging:popupTheme="@style/Widget.AppCompat.Toolbar">
+                    <include
+                        android:id="@+id/serchbar"
+                        layout="@layout/layout_isinging_search_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize" />
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            libISinging:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</pl.sugl.common.widget.VpSwipeRefreshLayout>
